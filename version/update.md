@@ -24,11 +24,11 @@ composer require encore/laravel-admin:dev-master -vvv
 - 각 버전의 프론트앤드 리소스는 변경될 가능성이 있다.
 ```
 / / Force to publish release assets files
-Php artisan vendor:publish --tag=laravel-admin-assets --force
+php artisan vendor:publish --tag=laravel-admin-assets --force
 // Force to publish release lang files
 php artisan vendor:publish --tag=laravel-admin-lang --force
 / / Clean up the view cache
-Php artisan view:clear
+php artisan view:clear
 ```
 - 업데이트 후 브라우저 캐시를 정리하여 확인할 것.
 
