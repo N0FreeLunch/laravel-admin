@@ -16,6 +16,8 @@
 ## permissions_table
 - 테이블명은 `permissions_table`이다.
 - 컬럼의 구성은 id, name, slug, http_method, http_path, created_at, updaated_at으로 구성되어 있다.
+- http_method의 데이터는 HTTP 메소드인 'GET', 'POST', 'FETCH', 'PUT', 'DELETE' 등을 할당할 수 있다. 여러개를 복수로 집어 넣을 때는 콤마(,)로 구분한 문자열로 설정한다.
+- http_path 컬럼의 경로에는 wildcard를 사용할 수 있다. 개행문자를 사용하여 여러 경로를 입력할 수 있다.
 
 ### 설명
 - 라라벨 어드민 경로로 리퀘스트를 보냈을 때 컨트롤러로 리퀘스트를 보낼 것인지 차단을 하고 419 에러를 응답할 것인지를 결정하는 테이블이다.
