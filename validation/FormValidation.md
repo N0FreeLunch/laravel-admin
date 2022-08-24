@@ -13,7 +13,7 @@ $form->text('title')->rules('required|min:3');
 
 - 익명함수를 사용하여 벨리데이션 룰을 설정
 ```php
-$form->text('title')->rules(function ($form) {
+$form->text('title')->rules(function ($form) use($id) {
     // If it is not an edit state, add field unique verification
     if (!$id = $form->model()->id) {
         return 'unique:users,email_address';
