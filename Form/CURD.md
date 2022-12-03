@@ -20,7 +20,7 @@
 - 화면 폼에서 전송된 데이터의 생성 및 변경이 이뤄지기 전에 중간에 로직을 취소하고 다른 화면으로 리다이렉트 하는 코드를 만들어 준다.
 - `redirect()->to` 뿐만 아니라 `back()`을 사용해서 송신 전 페이지를 다시 띄우는 방법 등을 사용해도 된다.
 ```php
-/ callback after form submission
+// callback after form submission
 $form->submitted(function (Form $form) {
     return redirect()->to('redirect/path');
 });
